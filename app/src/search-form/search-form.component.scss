@@ -1,0 +1,35 @@
+form {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0 0 2rem;
+	> div {
+		flex-basis: 46%;
+		position: relative;
+		label {
+			position: absolute;
+		    font-size: .75rem;
+		    top: -.75rem;
+		    color: #bbb;
+		}
+		input {
+			display: block;
+			border: solid transparent;
+			border-width: 0 0 2px 0;
+			background: none;
+			outline: none;
+			width: 100%;
+			padding: .5rem 0;
+			&:focus ~ div.border {
+				background: black;
+				transition: background .25s;
+			}
+		}
+		div.border {
+			background: #bbb;
+			height: 2px;
+			margin: -2px 0 0 0;	
+		}
+	}
+}
+
