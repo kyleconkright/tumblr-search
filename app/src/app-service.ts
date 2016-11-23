@@ -24,7 +24,7 @@ export class SearchService {
 	}
 
 	deleteFavorite(value) {
-		this.favoritesList.splice(this.favoritesList.indexOf(value), 1));
+		this.favoritesList.splice(this.favoritesList.indexOf(value), 1);
 	}
 
 	getPosts(blog, tag) {
